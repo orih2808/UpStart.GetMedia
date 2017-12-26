@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace GetMedia.Models
 {
@@ -13,33 +10,33 @@ namespace GetMedia.Models
 
         [EmailAddress]
         [Required]
-        virtual public string Enmail { get; set; }
+        public virtual string Enmail { get; set; }
 
         [Required]
         [StringLength(256)]
-        virtual public string Name { get; set; }
+        public virtual string Name { get; set; }
 
         [Required]
         [StringLength(256)]
-        virtual public string SoleProprietorship { get; set; }
+        public virtual string SoleProprietorship { get; set; }
 
         [Required]
         [StringLength(256)]
-        virtual public string ZipCOde { get; set; }
+        public virtual string ZipCOde { get; set; }
 
         [Required]
         [StringLength(256)]
-        virtual public string PhoneNumber { get; set; }
+        public virtual string PhoneNumber { get; set; }
 
         [Required]
         [StringLength(256)]
-        virtual public string WebAddress { get; set; }
+        public virtual string WebAddress { get; set; }
 
         [Required]
         [StringLength(256)]
-        virtual public string  AppLink { get; set; }
+        public virtual string  AppLink { get; set; }
 
-        virtual public ICollection<Media> PublisherMedia { get; set; }
+        public virtual ICollection<Media> PublisherMedia { get; set; }
 
     }
 }

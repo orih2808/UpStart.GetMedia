@@ -8,12 +8,12 @@ namespace GetMedia.Models
     public class UserInOrganization
     {
         public int UserId                               { get; set; }
-        virtual public User User                        { get; set; }
+        public virtual User User                        { get; set; }
 
 
         public int OrganizationId                       { get; set; }
-        virtual public Organization Organization        { get; set; }
+        public virtual Organization Organization        { get; set; }
 
-        virtual public ICollection<UserRole> UserRole { get; set; }
+        public virtual ICollection<UserRole> UserRole   { get; set; }
     }
 }

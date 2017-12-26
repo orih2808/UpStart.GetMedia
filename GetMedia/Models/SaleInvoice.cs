@@ -5,6 +5,6 @@ namespace GetMedia.Models
     public class SaleInvoice
     {
         public int Id { get; set; }
-        virtual public ICollection<SalesInvoiceItem> SaleItems { get; set; } 
+        public virtual ICollection<SalesInvoiceItem> SaleItems { get; set; } 
     }
 }

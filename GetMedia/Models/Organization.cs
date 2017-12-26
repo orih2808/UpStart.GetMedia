@@ -10,10 +10,10 @@ namespace GetMedia.Models
 
         [Required]
         [StringLength(256)]
-        virtual public string Name { get; set; }
+        public virtual string Name { get; set; }
 
-        virtual public ICollection<UserInOrganization>  Users   { get; set; }
-        virtual public ICollection<Publisher> Publishers        { get; set; }
-        virtual public ICollection<Media> Medias                { get; set; }
+        public virtual ICollection<UserInOrganization>  Users   { get; set; }
+        public virtual ICollection<Publisher> Publishers        { get; set; }
+        public virtual ICollection<Media> Medias                { get; set; }
     }
 }

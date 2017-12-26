@@ -9,13 +9,15 @@ namespace GetMedia.Models
         int Id { get; }
 
         int ParentId { get; set; }
-        virtual public ICollection<Media> InnerMedia    { get; set; }
+        public virtual Media Parent { get; set; }
+
+        public virtual ICollection<Media> InnerMedia    { get; set; }
 
         [Required]
-        virtual public EMediaType MediaType             { get; set; }
+        public virtual EMediaType MediaType             { get; set; }
 
         [Required]
-        virtual public ICollection<Product> Products   { get; set; }
+        public virtual ICollection<Product> Products   { get; set; }
 
 
     }

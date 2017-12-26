@@ -3,7 +3,7 @@
     public class PurchaseOrderItem
     {
         public int Id { get; set; }
-        virtual public Product Prudcct { get; set; }
-        virtual public PurchaseOrderItemState ItemState { get;set;}
+        public virtual Product Prudcct { get; set; }
+        public virtual PurchaseOrderItemState ItemState { get;set;}
     }
 }

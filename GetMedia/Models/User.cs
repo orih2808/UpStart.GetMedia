@@ -8,7 +8,7 @@ namespace GetMedia.Models
     public class User
     {
         public int Id { get; set; }
-        virtual public ICollection<UserInOrganization> Organizations { get; set; }
-        virtual public ICollection<UserAdvertiser> Advertisers { get; set; }
-}
+        public virtual ICollection<UserInOrganization> Organizations { get; set; }
+        public virtual ICollection<UserAdvertiser> Advertisers { get; set; }
+    }
 }

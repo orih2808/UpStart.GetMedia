@@ -7,10 +7,10 @@ namespace GetMedia.Models
 {
     public class UserAdvertiser
     {
-        public int UserId { get; set; }
-        public User User { get; set; }
+        public int UserId               { get; set; }
+        public User User                { get; set; }
 
-        public int AdvertiserId { get; set; }
-        public Advertiser Advertiser { get; set; }
+        public int AdvertiserId         { get; set; }
+        public Advertiser Advertiser    { get; set; }
     }
 }
