@@ -1,12 +1,26 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace GetMedia.Models
 {
     public class Campaign
     {
+        [Key]
         public int Id { get; set; }
-        public virtual ICollection<PurchaseOrder> Prudccts { get; set; }
 
-        //to add order models and then orderitem modle as a conection table 
+        [Required]
+        [StringLength(256)]
+        public virtual string Name { get; set; }
+
+        [Required]
+        public virtual DateTime StartDate { get; set; }
+
+        [Required]
+        public virtual DateTime EndDate { get; set; }
+
+        public virtual ICollection<PurchaseOrder> Orders { get; set; }
+
+
     }
 }

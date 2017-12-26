@@ -36,7 +36,12 @@ namespace GetMedia.Models
         [StringLength(256)]
         public virtual string  AppLink { get; set; }
 
-        public virtual ICollection<Media> PublisherMedia { get; set; }
+        public virtual int? ParentID { get; set; }
+        public virtual Publisher Parent { get; set; }
 
+        [Required]
+        public virtual User User { get; set; }
+
+        public virtual ICollection<Media> PublisherMedia { get; set; }
     }
 }

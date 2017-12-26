@@ -18,3 +18,19 @@ public enum EProductFormat
 public enum EProductFixedSizes
 {
 }
+
+public enum ESpecificLocation
+{
+}
+
+public enum EItemStateStatus
+{
+}
+
+public enum EItemState
+{
+}
+
+public enum EUserStatus
+{
+}
