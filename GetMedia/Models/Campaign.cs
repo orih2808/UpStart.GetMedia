@@ -14,9 +14,11 @@ namespace GetMedia.Models
         public virtual string Name { get; set; }
 
         [Required]
+        [DataType(DataType.Date)]
         public virtual DateTime StartDate { get; set; }
 
         [Required]
+        [DataType(DataType.Date)]
         public virtual DateTime EndDate { get; set; }
 
         public virtual ICollection<PurchaseOrder> Orders { get; set; }

@@ -10,9 +10,11 @@ namespace GetMedia.Models
         public int Id { get; set; }
 
         [Required]
+        [DataType(DataType.Date)]
         public virtual DateTime StartDate { get; set; }
 
         [Required]
+        [DataType(DataType.Date)]
         public virtual DateTime EndDate { get; set; }
 
         [Required]

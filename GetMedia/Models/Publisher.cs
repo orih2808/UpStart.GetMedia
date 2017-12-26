@@ -10,6 +10,7 @@ namespace GetMedia.Models
 
         [EmailAddress]
         [Required]
+        [DataType(DataType.EmailAddress)]
         public virtual string Enmail { get; set; }
 
         [Required]
@@ -26,6 +27,7 @@ namespace GetMedia.Models
 
         [Required]
         [StringLength(256)]
+        [DataType(DataType.PhoneNumber)]
         public virtual string PhoneNumber { get; set; }
 
         [Required]

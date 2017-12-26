@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace GetMedia.Models
 {
-    public class PurchaseOrderItemState
+    public class PurchaseOrderItemState: IModel
     {
         [Key]
         public int Id { get; set; }

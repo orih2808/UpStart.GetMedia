@@ -8,6 +8,12 @@ namespace GetMedia.Models
         [Key]
         public int Id { get; set; }
 
+        [DataType(DataType.EmailAddress)]
+        public virtual string Email { get; set; }
+
+        [DataType(DataType.Password)]
+        public virtual string Password { get; set; }
+
         [Required]
         public virtual EUserStatus UserStatus { get; set; }
 
