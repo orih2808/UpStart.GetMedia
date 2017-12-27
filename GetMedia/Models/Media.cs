@@ -6,7 +6,7 @@ namespace GetMedia.Models
     public class Media
     {
         [Key]
-        int Id { get; }
+        public int Id { get; set; }
 
         public int? ParentId { get; set; }
         public virtual Media Parent { get; set; }

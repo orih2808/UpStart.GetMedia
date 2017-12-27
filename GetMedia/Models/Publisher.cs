@@ -11,34 +11,34 @@ namespace GetMedia.Models
         [EmailAddress]
         [Required]
         [DataType(DataType.EmailAddress)]
-        public virtual string Enmail { get; set; }
+        public string Enmail { get; set; }
 
         [Required]
         [StringLength(256)]
-        public virtual string Name { get; set; }
+        public string Name { get; set; }
 
         [Required]
         [StringLength(256)]
-        public virtual string SoleProprietorship { get; set; }
+        public string SoleProprietorship { get; set; }
 
         [Required]
         [StringLength(256)]
-        public virtual string ZipCOde { get; set; }
+        public string ZipCOde { get; set; }
 
         [Required]
         [StringLength(256)]
         [DataType(DataType.PhoneNumber)]
-        public virtual string PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
 
         [Required]
         [StringLength(256)]
-        public virtual string WebAddress { get; set; }
+        public string WebAddress { get; set; }
 
         [Required]
         [StringLength(256)]
-        public virtual string  AppLink { get; set; }
+        public string  AppLink { get; set; }
 
-        public virtual int? ParentID { get; set; }
+        public int? ParentID { get; set; }
         public virtual Publisher Parent { get; set; }
 
         [Required]

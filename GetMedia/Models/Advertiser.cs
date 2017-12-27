@@ -8,7 +8,7 @@ namespace GetMedia.Models
         [Key]
         public int Id { get; set; }
 
-        public virtual int? ParentID { get; set; }
+        public int? ParentID { get; set; }
         public virtual Advertiser Parent { get; set; }
 
         [Required]

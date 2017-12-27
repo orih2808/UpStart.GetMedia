@@ -9,15 +9,14 @@ namespace GetMedia.Models
         public int Id { get; set; }
 
         [DataType(DataType.EmailAddress)]
-        public virtual string Email { get; set; }
+        public string Email { get; set; }
 
         [DataType(DataType.Password)]
-        public virtual string Password { get; set; }
+        public string Password { get; set; }
 
         [Required]
         public virtual EUserStatus UserStatus { get; set; }
 
         public virtual ICollection<UserInOrganization> Organizations { get; set; }
-        //public virtual ICollection<UserAdvertiser> Advertisers { get; set; }
     }
 }

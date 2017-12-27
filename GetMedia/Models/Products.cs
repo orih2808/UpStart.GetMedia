@@ -10,7 +10,7 @@ namespace GetMedia.Models
 
         [Required]
         [StringLength(256)]
-        public virtual string Name { get; set; }
+        public string Name { get; set; }
 
         [Required]
         public virtual EProductFormat ProductFormat { get; set; }
@@ -23,12 +23,12 @@ namespace GetMedia.Models
 
         [Required]
         [Range(1, int.MaxValue)]
-        public virtual int Amount { get; set; }
+        public int Amount { get; set; }
 
-        public virtual bool IsForSale { get; set; }
+        public bool IsForSale { get; set; }
 
         [Required]
         [Range(1, double.MaxValue)]
-        public virtual double Price { get; set; }
+        public double Price { get; set; }
     }
 }

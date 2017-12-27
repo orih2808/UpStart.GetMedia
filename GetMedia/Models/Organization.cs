@@ -6,11 +6,11 @@ namespace GetMedia.Models
     public class Organization
     {
         [Key]
-        virtual public int Id { get; set; }
+        public int Id { get; set; }
 
         [Required]
         [StringLength(256)]
-        public virtual string Name { get; set; }
+        public string Name { get; set; }
 
         public virtual ICollection<UserInOrganization> Users { get; set; }
         public virtual ICollection<Publisher> Publishers { get; set; }

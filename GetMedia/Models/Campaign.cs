@@ -11,7 +11,7 @@ namespace GetMedia.Models
 
         [Required]
         [StringLength(256)]
-        public virtual string Name { get; set; }
+        public string Name { get; set; }
 
         [Required]
         [DataType(DataType.Date)]
